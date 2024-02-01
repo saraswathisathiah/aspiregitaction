@@ -1,0 +1,14 @@
+name: First workflow
+on: push
+jobs:
+  first-job:
+  
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: my-step
+        run: echo "Hello Aspirian"
+      -
+        name: my-step1
+        run: echo "Test Steps"
+
