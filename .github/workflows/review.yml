@@ -1,0 +1,11 @@
+ name: First workflow1
+ on: pull_request 
+   
+ jobs: 
+  specific_review_needed:
+     runs-on: ubuntu-latest
+     
+     if: ${{github.event.requested_team.name=='aspiretest'}}
+     steps: 
+     
+        -  run: echo "Before merge ,the team requested for reiew"
